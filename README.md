@@ -58,7 +58,11 @@ app.mount("#app");
 </template>
 
 <script setup>
-import { ref } from 'vue' 
+import { ref } from 'vue'
+// 加载css
+import 'colorspick/style.css'
+// 导入组件
+import { ColorsPick } from 'colorspick'
 const colors = ref() 
 </script> 
 ```
@@ -67,11 +71,11 @@ const colors = ref()
 > Home.vue
 ```html
 <template 
-  <colors-pick v-model="colors1" />
-   {{ colors1 }}  
+  <colors-pick v-model="color1" />
+   {{ color1 }}  
 
-    <colors-pick cp-type='gradc' v-model="colors2" >
-   {{ colors2 }} 
+    <colors-pick cp-type='gradc' v-model="color2" >
+   {{ color2 }} 
 </template>
 
 <script setup>
