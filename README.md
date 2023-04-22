@@ -79,11 +79,7 @@ const colors = ref()
 </template>
 
 <script setup>
-import { ref } from 'vue'
-// 加载css
-import 'colorspick/style.css'
-// 导入组件
-import { ColorsPick } from 'colorspick'
+import { ref } from 'vue' 
  
 const color1 = ref()
 const color2 = ref()
