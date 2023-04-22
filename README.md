@@ -1,7 +1,5 @@
  
-[root@C61 ~] 
-[root@C61 ~] 
-[![npm](https://img.shields.io/npm/v/colorspick.svg)](https://www.npmjs.com/package/colorspick)
+ [![npm](https://img.shields.io/npm/v/colorspick.svg)](https://www.npmjs.com/package/colorspick)
 # colorspick - 安装
 - colorspick（颜色选择器），支持单色、渐变选择
 - 优点:
