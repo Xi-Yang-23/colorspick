@@ -3,8 +3,11 @@
   <div class="colors-pick flex" v-if="cpType === 'onec'">
     <!-- 颜色值与复制按钮 -->
     <div class="flex">
+      <!-- <input :style="{ 'width': widthAndHeight.w, 'height': widthAndHeight.h }" :disabled="!props.disabled"
+        class="set-color" type="color" v-model="onecActiveColor"> -->
+
       <input :style="{ 'width': widthAndHeight.w, 'height': widthAndHeight.h }" :disabled="!props.disabled"
-        class="set-color" type="color" v-model="onecActiveColor">
+        class="set-color  cue-po" type="color" @change="inputEvs" @input="inputEvs" :value="onecActiveColor">
 
       <div class="copy color-box active cue-po" @click="startCopy" v-if="props.copy">
         <div>{{ onecActiveColor }}</div>
@@ -185,21 +188,25 @@
 <script>
 export default {
   name: 'ColorsPick'
-}
-
+} 
 </script>
 
 <script setup>
-import { computed, ref, reactive, onMounted, watch } from 'vue'
+import { computed, ref, reactive, onMounted, watch, useAttrs } from 'vue'
 import copy from '@/utils/copy'
 import ramColor from '@/utils/ramColor'
 import Gradc from '@/utils/gradc'
 
-let gradcp, time = null;
-
 const emit = defineEmits(['update:modelValue'])
+
+
 const props = defineProps(
   {
+    cpEvs: {
+      type: String,
+      default: 'input'
+    },
+
     gradResData: {
       default: 'all',
       type: String,
@@ -355,21 +362,34 @@ const props = defineProps(
 
   })
 
+let gradcp, time = null;
+
+
+// 事件类型  
+const inputEvs = ev => {
+  const getEv = ev.type
+  const colorVal = ev.target.value
+
+  if (props.cpEvs === 'change' && getEv === 'change') {
+    onecActiveColor.value = colorVal
+    emit('update:modelValue', onecActiveColor.value)
+  } else if (props.cpEvs === 'input' && getEv === 'input') {
+    onecActiveColor.value = colorVal
+    emit('update:modelValue', onecActiveColor.value)
+  }
+
+  onecActiveColorIndex.value = compOneColorActiveIndex.value
+}
+
+// 计算颜色激活的下标
+const compOneColorActiveIndex = computed(() => onecActiveColorIndex.value = props.cpSwatColors.findIndex(itemColor => itemColor.toLocaleLowerCase() === onecActiveColor.value.toLocaleLowerCase()))
+
 
 onMounted(() => {
   if (props.cpType === 'gradc') {
     // 渐变色监听
     gradcp = new Gradc(colorList.value, props.gradRangeWidth, props.gradIconSize)
     watch(colorList, getGradColor, { deep: true })
-  } else {
-    // 单色 | 纯色板监听
-    watch(onecActiveColor, newColor => {
-      if (cpType.value === 'onec') {
-        const activeClorIndex = props.cpSwatColors.findIndex(itemColor => itemColor.toLocaleLowerCase() === newColor.toLocaleLowerCase())
-        onecActiveColorIndex.value = activeClorIndex
-      }
-      emit('update:modelValue', newColor)
-    })
   }
 })
 
@@ -646,9 +666,8 @@ const cpType = computed(() => {
   return 'onec'
 })
 
-
 // 单色
-const onecActiveColor = ref('')
+const onecActiveColor = ref()
 const onecActiveColorIndex = ref(0)
 
 // 色板
@@ -694,11 +713,10 @@ const swatches = computed(() => {
 const swatClick = (color, activeIndex) => {
   if (cpType.value === 'swate') {
     if (color.disabled === true) {
-
       onecActiveColor.value = color.color
       onecActiveColorIndex.value = activeIndex
     }
-
+    emit('update:modelValue', onecActiveColor.value)
   } else if (cpType.value === 'onec') {
     onecActiveColor.value = color
     onecActiveColorIndex.value = activeIndex
@@ -728,8 +746,9 @@ if (cpType.value === 'onec') {
   } else {
     onecActiveColor.value = props.color
   }
-  // 单色首次加载
+  // 单色首次加载  
   emit('update:modelValue', onecActiveColor.value)
+
   // 渐变色
 } else if (cpType.value === 'gradc') {
   // 判断props.color是否为数组
@@ -812,7 +831,8 @@ if (cpType.value === 'onec') {
   colorList.value = colorList.value.concat(disbledColor)
 
   onecActiveColorIndex.value = props.cpSwatActiveIndex
-  onecActiveColor.value = colorList.value[onecActiveColorIndex.value].color
+  onecActiveColor.value = colorList.value[onecActiveColorIndex.value] && colorList.value[onecActiveColorIndex.value].color
+
   // 纯色板首次加载返回的颜色
   emit('update:modelValue', onecActiveColor.value)
 }

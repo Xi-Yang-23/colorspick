@@ -1,4 +1,4 @@
- 
+
  [![npm](https://img.shields.io/npm/v/colorspick.svg)](https://www.npmjs.com/package/colorspick)
 # colorspick - 安装
 - colorspick（颜色选择器），支持单色、渐变选择
@@ -7,9 +7,12 @@
   - 简洁
 
 ---
- 
+
 
 # Demo - 效果演示
+- [Demo](https://yunzhonjun.github.io/colorspick.github.io/)
+- 备用地址 - https://yunzhonjun.github.io/colorspick.github.io/
+- 参考图
 ![](./demo.png)
 
 
@@ -17,16 +20,37 @@
 > npm
 
  ```sh
-npm i colorspick
-
-cnpm i colorspick
-
-yarn i colorspick
+npm i colorspick 
  ```
 
 ---
 
-# Top1-Vue全局使用 
+# Top1-Vue局部使用（推荐）
+> Home.vue
+```html
+<template 
+  <colors-pick v-model="color1" />
+   {{ color1 }}  
+
+    <colors-pick cp-type='gradc' v-model="color2" >
+   {{ color2 }} 
+</template>
+
+<script setup>
+import { ref } from 'vue'
+// 加载css
+import 'colorspick/style.css'
+// 导入组件
+import { ColorsPick } from 'colorspick'
+ 
+const color1 = ref()
+const color2 = ref()
+</script> 
+```
+
+---
+
+# Top2-Vue全局使用 
 ### 1. main.js全局注册组件
 > src/main.js
 ```js
@@ -63,28 +87,7 @@ const colors = ref()
 </script> 
 ```
 
-# Top2-Vue局部使用（推荐）
-> Home.vue
-```html
-<template 
-  <colors-pick v-model="color1" />
-   {{ color1 }}  
 
-    <colors-pick cp-type='gradc' v-model="color2" >
-   {{ color2 }} 
-</template>
-
-<script setup>
-import { ref } from 'vue'
-// 加载css
-import 'colorspick/style.css'
-// 导入组件
-import { ColorsPick } from 'colorspick'
- 
-const color1 = ref()
-const color2 = ref()
-</script> 
-```
 
 ---
 
@@ -120,7 +123,7 @@ const color2 = ref()
 |cp-swat-size|String|默认 30px|色板的色块大小 |onec  \| swate|
 |cp-swat-active-index|Number|默认 0|色块初始激活的颜色数组下标  |onec  \| swate|
 |z-index|Number|默认 1| 复制成功提示z-index属性值 |onec  \| gradc|
-
+|cp-evs|String{input, change}|默认 input | 颜色返回时机 | onec \| swate 
 ---
 
 # solt - 插槽
@@ -133,6 +136,12 @@ const color2 = ref()
 |grad-del|渐变色删除按钮|gradc|
 
 ---
+
+# Event - 事件 
+|名称|作用|可用模式|
+|:-----|:-----|:-----|
+|v-model|返回16进制颜色|gradc \| onec \| swate |
+
 
  # 更多参考配置 - more
 > 参考
