@@ -10,6 +10,9 @@
  
 
 # Demo - 效果演示
+- [Demo](https://yunzhonjun.github.io/colorspick.github.io/)
+- 备用地址 - https://yunzhonjun.github.io/colorspick.github.io/
+- 参考图
 ![](./demo.png)
 
 
