@@ -1,28 +1,56 @@
 
  [![npm](https://img.shields.io/npm/v/colorspick.svg)](https://www.npmjs.com/package/colorspick)
+<<<<<<< HEAD
  
  # Demo - 效果演示
  - colorspick（颜色选择器），支持单色、渐变选择
 - 优点:
   - 轻量
   - 简洁
+=======
+# colorspick - 安装
+- colorspick（颜色选择器），支持单色、渐变选择
+- 优点:
+  - 轻量
+  - 简洁
+
+---
+
+
+# Demo - 效果演示
+>>>>>>> 455efc10d02bc9b37fb9db0de7777fbf96a35b37
 - [Demo](https://yunzhonjun.github.io/colorspick.github.io/)
 - 备用地址 - https://yunzhonjun.github.io/colorspick.github.io/
 - 参考图
 ![](./demo.png)
+<<<<<<< HEAD
  
  
 --- 
   
  
 # Start - 下载（install）  
+=======
+
+
+# Start - 下载（install）
+> npm
+
+>>>>>>> 455efc10d02bc9b37fb9db0de7777fbf96a35b37
  ```sh
 npm i colorspick 
  ```
 
+<<<<<<< HEAD
 --- 
  
 # Top1-Vue局部使用（推荐）  
+=======
+---
+
+# Top1-Vue局部使用（推荐）
+> Home.vue
+>>>>>>> 455efc10d02bc9b37fb9db0de7777fbf96a35b37
 ```html
 <template 
   <colors-pick v-model="color1" />
@@ -82,6 +110,7 @@ import { ref } from 'vue'
 const colors = ref() 
 </script> 
 ```
+<<<<<<< HEAD
  
 
 ---
@@ -89,6 +118,15 @@ const colors = ref()
 # 属性 
 |<span style="display:inline-block;min-width:190px">属性</span>|<span style="display:inline-block;min-width:170px">类型</span>|<span style="display:inline-block;min-width:200px">默认值</span>|作用|<span style="display:inline-block;min-width:200px">可用模式</span>|
 |<span style="display:inline-block;min-width:120px">属性</span>|<span style="display:inline-block;min-width:170px">类型</span>|<span style="display:inline-block;min-width:100px">默认值</span>|作用|<span style="display:inline-block;min-width:200px">可用模式</span>|
+=======
+
+
+
+---
+
+# 属性
+|<span style="display:inline-block;min-width:190px">属性</span>|<span style="display:inline-block;min-width:170px">类型</span>|<span style="display:inline-block;min-width:200px">默认值</span>|作用|<span style="display:inline-block;min-width:200px">可用模式</span>|
+>>>>>>> 455efc10d02bc9b37fb9db0de7777fbf96a35b37
 |:----|:----|:----|:----|:---:|
 |cp-type|String {gradc \| onec \| swate}|默认 onec|gradc(渐变模式)  <br/>  onec(单色模式) <br/>swate(纯色板模式)|   gradc \| swate  \| onec |
 |disabled|Boolean|默认 true(颜色可选)|是否可以选择颜色|onec \| gradc|
@@ -98,8 +136,11 @@ const colors = ref()
 |square|Boolean|默认 false |矩形|onec \| gradc \| swate|
 |width|[String,Number]|onec模式默认 30px \| gradc模式默认200px|选色器高宽度|onec \| gradc|
 |height|[String,Number]|onec模式默认 30px \| gradc模式默认200px|选色器高度|onec \| gradc|
+<<<<<<< HEAD
 |width|[String,Number]|onec模式默认 30px<br/><br/> gradc模式默认200px|选色器高宽度|onec \| gradc|
 |height|[String,Number]|onec模式默认 30px<br/><br/> gradc模式默认 200px|选色器高度|onec \| gradc|
+=======
+>>>>>>> 455efc10d02bc9b37fb9db0de7777fbf96a35b37
 |color|[String,Array]|默认 #05b9e6（天蓝色）**注：仅支持6位16进制颜色 如：#ffffff**|onec(单色)模式初始颜色 #05b9e6 <br/><br/> gradc(渐变)模式初始颜色 ['#FF0000','#6284FF'] |onec \| gradc |
 |grad-range-width|Number|默认 200 |滑块宽度 (单位：px)|gradc|
 |grad-range-height|String|默认 2px |滑块高度|gradc|
@@ -115,13 +156,18 @@ const colors = ref()
 |cp-border| String |默认`cp-border='2px #f4f4f4'`|边框样式 例如：` cp-border="0"-> 无边框 cp-border="5px #000" -> 5px颜色为#000的边框`|onec \| gradc \| swate|
 |cp-swat|Boolear|默认false 关闭|开/关色板|onec|
 |cp-swat-colors|Array|默认['#FF0000', '#FF7F00', '#FFFF00', '#00FF00', '#00FFFF', '#0000FF', '#8B00FF'] <br/><br/> **注意**：onec(单色)模式仅支持数组，如：`:cp-swat-colors=['#FF0000', '#FF7F00', '#FFFF00']` <br/><br/> swat(纯色板)模式支持数组对象或纯数组，例1`:cp-swat-colors=['#FF0000', '#FF7F00', '#FFFF00']` <br/><br/>例2 `:swate-colors=[{color:'#FFFF00',disabled:true},'#8B00FF',{color:'#00FF00',disabled:false},{color:'#00FFFF',disabled:false}]`color表示颜色值（仅支持16位6进制颜色，如`#ffffff`）， disabled表示色块是否可选|色板初始颜色|onec \| swate|
+<<<<<<< HEAD
 |cp-swat-width|String|默认150px|色板宽度 (设置宽度，超出时自动换行) | onec \| swate 
+=======
+|cp-swat-width|String|默认150px|色板宽度 (设置宽度，超出时自动换行) |onec|
+>>>>>>> 455efc10d02bc9b37fb9db0de7777fbf96a35b37
 | cp-swat-active|String|默认 love|色板选中类型 circle(圆) square(矩形) goly(三角) love(爱心) yes（勾勾） border（边框）|onec  \| swate|
 |cp-swat-gap|String| 默认 5px|色板间距 例如: `cp-swat-gap='2px 5px'` 表示水平间距2px，垂直间距5px  \| 又例：`cp-swat-gap='2px'`垂直间距与水平间距2px|onec \| swate|
 |cp-swat-size|String|默认 30px|色板的色块大小 |onec  \| swate|
 |cp-swat-active-index|Number|默认 0|色块初始激活的颜色数组下标  |onec  \| swate|
 |z-index|Number|默认 1| 复制成功提示z-index属性值 |onec  \| gradc|
 |cp-evs|String{input, change}|默认 input | 颜色返回时机 | onec \| swate 
+<<<<<<< HEAD
 |cp-swat-width|String|默认150px|色板宽度 (设置宽度，超出时自动换行) |onec  \|swate|
 | cp-swat-active|String|默认 love|色板选中类型 circle(圆) square(矩形) goly(三角) love(爱心) yes（勾勾） border（边框）|onec  \| swate|
 |cp-swat-gap|String| 默认 5px|色板间距 例如: `cp-swat-gap='2px 5px'` 表示水平间距2px，垂直间距5px  <br/><br/>  又例：`cp-swat-gap='2px'`垂直间距与水平间距2px|onec \| swate|
@@ -130,6 +176,8 @@ const colors = ref()
 |z-index|Number|默认 1| 复制成功提示z-index属性值 |onec  \| gradc|
 |cp-evs|String{input, change}|默认 input | 颜色返回时机 | onec \| swate |
 
+=======
+>>>>>>> 455efc10d02bc9b37fb9db0de7777fbf96a35b37
 ---
 
 # solt - 插槽
@@ -202,18 +250,34 @@ const colors = ref()
         :cp-swat-active-index='3' round cp-type='swate' v-model="colors8" />
       <p>{{ colors8 }}</p>
     </div>
+<<<<<<< HEAD
   
     <!-- 单色 -->
     <div>
       <colors-pick :cp-swat-colors="['#00FFFF', '#FFFF00', '#0000FF', '#00FF00', '#8B00FF']" cp-evs="change" round
         cp-swat-active="love" cp-swat v-model="colors16" />
+=======
+
+
+
+
+    <!-- 单色 -->
+    <div>
+      <colors-pick :cp-swat-colors="['#00FFFF', '#FFFF00', '#0000FF', '#00FF00', '#8B00FF']" round cp-swat-active="love"
+        cp-swat v-model="colors16" />
+>>>>>>> 455efc10d02bc9b37fb9db0de7777fbf96a35b37
       <p> {{ colors16 }}</p>
     </div>
 
     <div>
       <colors-pick :cp-swat-colors="['#eeeeee', '#dddddd', '#000000']" :cp-swat-active-index='2' round
+<<<<<<< HEAD
         cp-swat-active="square" cp-swat v-model="colors17" />
       <p>{{ colors17 }}</p>
+=======
+        cp-swat-active="square" cp-swat v-model="colors16" />
+      <p>{{ colors16 }}</p>
+>>>>>>> 455efc10d02bc9b37fb9db0de7777fbf96a35b37
     </div>
 
     <div>
@@ -265,6 +329,10 @@ const colors = ref()
 
   </div>
 </template>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 455efc10d02bc9b37fb9db0de7777fbf96a35b37
 <script setup>
 import { ref } from 'vue' 
 
@@ -318,10 +386,14 @@ const colors18 = ref()
 
  # 反馈
 ## 1. 渐变色色板不可用?
+<<<<<<< HEAD
 答：色板仅支持单色模式(onec)与纯色板模式(swate)
 
 答：色板仅支持单色模式(onec)与纯色板模式(swate)
 
+=======
+答：色板仅支持单色模式(onec)与纯色板模式(swat)
+>>>>>>> 455efc10d02bc9b37fb9db0de7777fbf96a35b37
 
 
 # bug、建议、样式、优化提交

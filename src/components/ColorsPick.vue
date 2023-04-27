@@ -1,9 +1,17 @@
 <template>
   <!-- 单色模式 -->
   <div class="colors-pick flex" v-if="cpType === 'onec'">
+<<<<<<< HEAD
 
     <!-- 颜色值与复制按钮-->
     <div class="flex">
+=======
+    <!-- 颜色值与复制按钮 -->
+    <div class="flex">
+      <!-- <input :style="{ 'width': widthAndHeight.w, 'height': widthAndHeight.h }" :disabled="!props.disabled"
+        class="set-color" type="color" v-model="onecActiveColor"> -->
+
+>>>>>>> 455efc10d02bc9b37fb9db0de7777fbf96a35b37
       <input :style="{ 'width': widthAndHeight.w, 'height': widthAndHeight.h }" :disabled="!props.disabled"
         class="set-color  cue-po" type="color" @change="inputEvs" @input="inputEvs" :value="onecActiveColor">
 
@@ -714,12 +722,19 @@ const swatClick = (color, activeIndex) => {
       onecActiveColor.value = color.color
       onecActiveColorIndex.value = activeIndex
     }
+<<<<<<< HEAD
 
+=======
+    emit('update:modelValue', onecActiveColor.value)
+>>>>>>> 455efc10d02bc9b37fb9db0de7777fbf96a35b37
   } else if (cpType.value === 'onec') {
     onecActiveColor.value = color
     onecActiveColorIndex.value = activeIndex
   }
+<<<<<<< HEAD
   emit('update:modelValue', onecActiveColor.value)
+=======
+>>>>>>> 455efc10d02bc9b37fb9db0de7777fbf96a35b37
 }
 
 // 颜色初始化
@@ -883,11 +898,16 @@ const radius = computed(() => {
   }
 }) 
 </script>
+<<<<<<< HEAD
  
 <style scoped>
 /* 
  
 <style scoped> /*  
+=======
+<style scoped>
+/* 
+>>>>>>> 455efc10d02bc9b37fb9db0de7777fbf96a35b37
 色板
 width 
 gap
@@ -1389,6 +1409,7 @@ border
 }
 
 /* .disabled::after {
+<<<<<<< HEAD
 =======
  .cp-swatches {
    display: flex;
@@ -1880,6 +1901,8 @@ border
 
 /* .disabled::after {
 >>>>>>> 6d67a71 (更新文档+修复bug)
+=======
+>>>>>>> 455efc10d02bc9b37fb9db0de7777fbf96a35b37
   content: '';
   position: absolute;
   width: 100%;

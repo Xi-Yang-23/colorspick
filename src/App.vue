@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
   <div class="demo">
     <!-- 纯色板 -->
     <div>
@@ -116,6 +117,26 @@
 <script setup>
 import { ref } from 'vue'
 // 引入
+=======
+  <!-- <colors-pick v-model="colors1" cp-swat /> 
+<br><br><br><br><br><br><br><br><br><br>  
+  <colors-pick v-model="colors2" cp-type="swate" :cp-swat-active-index="8"/>
+  {{ colors2 }} -->
+
+  <!--   v-model="colors1" cp-evs="change"-->
+  <!-- <colors-pick v-model:input="colors2"/>
+  {{ colors2}} -->
+
+  <colors-pick v-model="colors1" cp-type="gradc" cp-evs="change" grad-res-data="gradinfo" />
+  <br><br><br><br><br><br><br><br><br><br> <br><br><br> <br><br><br> <br><br><br>
+  {{ colors1 }}
+
+  <!-- input change -->
+</template>
+
+<script setup>
+import { ref } from 'vue'
+>>>>>>> 455efc10d02bc9b37fb9db0de7777fbf96a35b37
 import ColorsPick from '@/components/ColorsPick.vue'
 
 const colors1 = ref()

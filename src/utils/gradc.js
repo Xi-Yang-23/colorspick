@@ -3,10 +3,16 @@
 * @move 移动
 * @up 松开
 <<<<<<< HEAD
+<<<<<<< HEAD
 * @init 初始化
 * @rotate 旋转 
 * @init 初始化 
  
+=======
+* @init 初始化
+* @rotate 旋转
+* 
+>>>>>>> 455efc10d02bc9b37fb9db0de7777fbf96a35b37
 * @colorListArr 操作的数组
 * @sliderWidth 滑块宽度
 * @itemColorSize 颜色滑动块大小
