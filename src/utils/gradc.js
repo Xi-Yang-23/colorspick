@@ -1,7 +1,12 @@
 /**
 * @down 按下
 * @move 移动
+<<<<<<< HEAD
 * @up 松开 
+=======
+* @up 松开
+<<<<<<< HEAD
+>>>>>>> 7672e946abb9e2c758abc818868742b751a36db8
 * @init 初始化
 * @rotate 旋转 
 * @init 初始化 
