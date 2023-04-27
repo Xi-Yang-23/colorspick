@@ -146,8 +146,7 @@ const colors = ref()
 # Event - 事件 
 |名称|作用|可用模式|
 |:-----|:-----|:-----|
-|v-model|绑定的16进制颜色|gradc \| onec \| swate |
-|v-model|返回16进制颜色|gradc \| onec \| swate |
+|v-model|绑定的16进制颜色|gradc \| onec \| swate | 
 
  
  # 反馈
