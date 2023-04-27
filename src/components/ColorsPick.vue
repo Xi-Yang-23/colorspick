@@ -109,21 +109,9 @@
       <!-- 设置 -->
       <div @click="gradToogleShowCOlor" :style="{
           'width': props.gradIconSize + 'px', 'height': props.gradIconSize + 'px'
-<<<<<<< HEAD
         }" class="active hover cue-po">
         <slot name="grad-setting">
           <svg t="1681701231439" class="icon icon-defalut" viewBox="0 0 1024 1024" version="1.1"
-=======
-<<<<<<< HEAD
-        }" class="active hover cue-po">
-        <slot name="grad-setting">
-          <svg t="1681701231439" class="icon icon-defalut" viewBox="0 0 1024 1024" version="1.1"
-=======
-        }">
-        <slot name="grad-setting">
-          <svg t="1681701231439" class="icon icon-defalut active hover cue-po" viewBox="0 0 1024 1024" version="1.1"
->>>>>>> 7672e946abb9e2c758abc818868742b751a36db8
->>>>>>> 9ca63ab23bb3ab666e0eb5b2f608687108ec8eb7
             xmlns="http://www.w3.org/2000/svg" p-id="9826" width="200" height="200">
             <path
               d="M627.2 972.8c19.456 19.456 51.2 25.6 76.8 12.8 45.056-19.456 83.456-38.4 121.856-70.656 19.456-19.456 32.256-44.544 25.6-76.8-6.656-38.4 0-83.456 19.456-121.856s57.344-64 96.256-76.8c25.6-6.656 44.544-32.256 51.2-57.344 6.656-45.056 6.656-96.256 0-140.8-6.656-25.6-25.6-51.2-51.2-57.856-38.4-12.8-76.8-38.4-96.256-76.8s-25.6-83.456-19.456-121.856c6.656-25.6-6.656-57.856-25.6-76.8-38.4-31.744-76.8-51.2-121.856-70.656-25.6-12.8-57.344-6.656-76.8 12.8C563.2 109.056 460.8 109.056 396.8 51.2c-19.456-19.456-51.2-25.6-76.8-12.8-44.544 18.944-83.456 38.4-121.856 70.656-25.6 19.456-32.256 45.056-25.6 76.8C192 268.8 140.8 358.4 57.856 384c-32.256 6.656-51.2 32.256-51.2 57.856C0 467.456 0 486.4 0 512s0 45.056 6.656 70.656c0 25.6 19.456 51.2 51.2 57.344 38.4 12.8 76.8 38.4 96.256 76.8s25.6 83.456 18.944 121.856c-6.656 25.6 6.656 57.344 25.6 76.8 38.4 32.256 76.8 51.2 121.856 70.656 25.6 12.8 57.856 6.656 76.8-12.8 63.488-64.512 165.888-64.512 229.888-0.512z"
@@ -138,21 +126,9 @@
       <!-- 删除 -->
       <div :style="{
           'width': props.gradIconSize + 'px', 'height': props.gradIconSize + 'px'
-<<<<<<< HEAD
         }" @click="gradRemove" :class="colorList.length > 2 ? 'active hover cue-po' : 'disabled'">
         <slot name="grad-del">
           <svg t="1681701036913" class="icon active icon-defalut" viewBox="0 0 1024 1024" version="1.1"
-=======
-<<<<<<< HEAD
-        }" @click="gradRemove" :class="colorList.length > 2 ? 'cue-po hover active' : 'disabled'">
-        <slot name="grad-del">
-          <svg t="1681701036913" class="icon icon-defalut" viewBox="0 0 1024 1024" version="1.1"
-=======
-        }" @click="gradRemove" :class="colorList.length > 2 ? '' : 'disabled'">
-        <slot name="grad-del">
-          <svg t="1681701036913" class="icon active icon-defalut hover cue-po" viewBox="0 0 1024 1024" version="1.1"
->>>>>>> 7672e946abb9e2c758abc818868742b751a36db8
->>>>>>> 9ca63ab23bb3ab666e0eb5b2f608687108ec8eb7
             xmlns="http://www.w3.org/2000/svg" p-id="6896" width="200" height="200">
             <path
               d="M512 0a89.043478 89.043478 0 0 1 89.043478 89.043478v44.521739H422.956522V89.043478a89.043478 89.043478 0 0 1 89.043478-89.043478zM155.826087 178.086957v756.869565a89.043478 89.043478 0 0 0 89.043478 89.043478h534.26087a89.043478 89.043478 0 0 0 89.043478-89.043478V178.086957z m222.608696 623.304347a44.521739 44.521739 0 0 1-89.043479 0V311.652174a44.521739 44.521739 0 0 1 89.043479 0z m178.086956 0a44.521739 44.521739 0 0 1-89.043478 0V311.652174a44.521739 44.521739 0 0 1 89.043478 0z m178.086957 0a44.521739 44.521739 0 0 1-89.043479 0V311.652174a44.521739 44.521739 0 0 1 89.043479 0z"
@@ -167,21 +143,9 @@
       <!-- 增加 -->
       <div :style="{
           'width': props.gradIconSize + 'px', 'height': props.gradIconSize + 'px'
-<<<<<<< HEAD
         }" @click="gradAdd" :class="colorList.length < gradColorNum ? 'active hover cue-po' : 'disabled'">
         <slot name="grad-add">
           <svg t="1681700429214" class="icon icon-defalut" viewBox="0 0 1024 1024" version="1.1"
-=======
-<<<<<<< HEAD
-        }" @click="gradAdd" :class="colorList.length < gradColorNum ? 'cue-po hover active' : 'disabled'">
-        <slot name="grad-add">
-          <svg t="1681700429214" class="icon icon-defalut" viewBox="0 0 1024 1024" version="1.1"
-=======
-        }" @click="gradAdd" :class="colorList.length < gradColorNum ? '' : 'disabled'">
-        <slot name="grad-add">
-          <svg t="1681700429214" class="icon icon-defalut active hover cue-po" viewBox="0 0 1024 1024" version="1.1"
->>>>>>> 7672e946abb9e2c758abc818868742b751a36db8
->>>>>>> 9ca63ab23bb3ab666e0eb5b2f608687108ec8eb7
             xmlns="http://www.w3.org/2000/svg" p-id="4388" width="200" height="200">
             <path
               d="M512 42.666667C253.866667 42.666667 42.666667 253.866667 42.666667 512s211.2 469.333333 469.333333 469.333333 469.333333-211.2 469.333333-469.333333S770.133333 42.666667 512 42.666667z m213.333333 512h-170.666666v170.666666c0 23.466667-19.2 42.666667-42.666667 42.666667s-42.666667-19.2-42.666667-42.666667v-170.666666h-170.666666c-23.466667 0-42.666667-19.2-42.666667-42.666667s19.2-42.666667 42.666667-42.666667h170.666666v-170.666666c0-23.466667 19.2-42.666667 42.666667-42.666667s42.666667 19.2 42.666667 42.666667v170.666666h170.666666c23.466667 0 42.666667 19.2 42.666667 42.666667s-19.2 42.666667-42.666667 42.666667z"
@@ -1424,220 +1388,8 @@ border
   border-radius: inherit;
 }
 
-<<<<<<< HEAD
 
 /* 移动颜色小球 */
-=======
-<<<<<<< HEAD
-/* 移动颜色小球 */
-=======
-/* .disabled::after {
-=======
- .cp-swatches {
-   display: flex;
-   flex-wrap: wrap;
- }
-
- .cp-swatches>div {
-   box-sizing: border-box;
-   position: relative;
- }
-
-
-
- .cp-swatches .active-border::after {
-   position: absolute;
-   content: '';
-   border: solid 2px #fff;
-   width: 77%;
-   height: 77%;
-   left: 50%;
-   top: 50%;
-   transform: translate(-50%, -50%);
-   border-radius: inherit;
- }
-
-
- .cp-swatches .active-yes::after {
-   position: absolute;
-   background-color: #f5f5f5;
-   content: '';
-   width: 10%;
-   height: 30%;
-   top: 60%;
-   left: 50%;
-   transform-origin: 0 100%;
-   transform: translate(-50%, -50%) rotate(-55deg);
-   border-radius: 5px 5px 0 0;
- }
-
- .cp-swatches .active-yes::before {
-   position: absolute;
-   background-color: #f5f5f5;
-   content: '';
-   width: 10%;
-   height: 50%;
-   top: 40%;
-   left: 45%;
-   transform-origin: 0 100%;
-   transform: translate(-50%, -50%) rotate(35deg);
-   border-radius: 5px 5px 0 0;
- }
-
-
- .cp-swatches .active-circle::after {
-   position: absolute;
-   background-color: #f5f5f5;
-   content: '';
-   width: 35%;
-   height: 35%;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   border-radius: 50%;
- }
-
- .cp-swatches .active-square::after {
-   position: absolute;
-   background-color: #f5f5f5;
-   content: '';
-   width: 30%;
-   height: 30%;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
- }
-
- .cp-swatches .active-goly::after {
-   position: absolute;
-   content: '';
-   width: 0;
-   height: 0;
-   border-left: 5px solid transparent;
-   border-right: 5px solid transparent;
-   border-bottom: 10px solid #f5f5f5;
-   top: calc(50% - 1px);
-   left: 50%;
-   transform: translate(-50%, -50%);
- }
-
-
- .cp-swatches .active-love:before,
- .cp-swatches .active-love:after {
-   position: absolute;
-   content: "";
-   left: 50%;
-   top: -5%;
-   width: 50%;
-   height: 80%;
-   background: #f5f5f5;
-   -moz-border-radius: 50px 50px 0 0;
-   border-radius: 50px 50px 0 0;
-   -webkit-transform: rotate(-45deg);
-   -moz-transform: rotate(-45deg);
-   -ms-transform: rotate(-45deg);
-   -o-transform: rotate(-45deg);
-   transform: rotate(-45deg) scale(.5);
-   -webkit-transform-origin: 0 100%;
-   -moz-transform-origin: 0 100%;
-   -ms-transform-origin: 0 100%;
-   -o-transform-origin: 0 100%;
-   transform-origin: 0 100%;
- }
-
- .cp-swatches .active-love:after {
-   left: 0;
-   -webkit-transform: rotate(45deg);
-   -moz-transform: rotate(45deg);
-   -ms-transform: rotate(45deg);
-   -o-transform: rotate(45deg);
-   transform: rotate(45deg) scale(.5);
-   -webkit-transform-origin: 100% 100%;
-   -moz-transform-origin: 100% 100%;
-   -ms-transform-origin: 100% 100%;
-   -o-transform-origin: 100% 100%;
-   transform-origin: 100% 100%;
- }
-
-
-
- .line-box {
-   width: 100%;
-   height: 100%;
-   position: absolute;
- }
-
- .rotate-val {
-   position: absolute;
-   left: 50%;
-   top: 50%;
-   transform: translate(-50%, -50%);
-   color: white;
-   z-index: 1;
-   font-size: 1.5em;
- }
-
- .line-box>div {
-   transform-origin: center v-bind('dashInfo.dashSize');
-   position: absolute;
-   width: 1px;
-   left: 50%;
-   top: v-bind('dashInfo.dashTop');
-   height: v-bind('dashInfo.gradLineDashHeight');
- }
-
- .rotate-view {
-   position: relative;
-   width: 100%;
-   height: 100%;
- }
-
- .icon-defalut {
-   width: 100%;
-   height: 100%;
- }
-
- .color-tip-value {
-   background-color: rgb(15, 187, 255);
-   position: absolute;
-   left: calc(50% - 6px);
-   top: calc(-100% + -6px);
-   font-size: .9em;
-   color: white;
-   padding: 0 2px;
-   border-radius: 2px;
- }
-
- .z-index-up {
-   z-index: 9;
- }
-
- .color-tip-value::after {
-   content: '';
-   position: absolute;
-   width: 0;
-   height: 0;
-   border-color: rgb(15, 187, 255) transparent transparent transparent;
-   border-width: 4px;
-   border-style: solid;
-   left: 2px;
-   top: 100%;
- }
-
- .set-color-bar {
-   justify-content: start;
-   gap: 3px;
-   width: auto;
- }
-
- .cue-po {
-   cursor: pointer;
- }
-
-
- /* 移动颜色小球 */
->>>>>>> 7672e946abb9e2c758abc818868742b751a36db8
->>>>>>> 9ca63ab23bb3ab666e0eb5b2f608687108ec8eb7
 .cp-color-set>div {
   cursor: e-resize;
   position: absolute;
@@ -1922,34 +1674,4 @@ border
   border: solid 1px rgb(255, 0, 0);
   border-radius: inherit;
 }
-<<<<<<< HEAD
-=======
-
-<<<<<<< HEAD
-/* .disabled::after { 
-=======
-/* .disabled::after {
->>>>>>> 6d67a71 (更新文档+修复bug)
->>>>>>> 7672e946abb9e2c758abc818868742b751a36db8
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  transform: translate(-50%, -50%) rotate(-45deg);
-  top: 50%;
-  left: 50%;
-  background-color: rgb(255, 0, 0);
-}
-
-.disabled::before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: -1px;
-  top: -1px;
-  border: solid 1px rgb(255, 0, 0);
-  border-radius: inherit;
-} */
->>>>>>> 9ca63ab23bb3ab666e0eb5b2f608687108ec8eb7
 </style>
