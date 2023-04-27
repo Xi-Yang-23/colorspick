@@ -1,6 +1,6 @@
 {
   "name": "colorspick",
-  "version": "1.2.4",
+  "version": "1.2.7",
   "private": false,
   "main": "./dist/colorspick.umd.js",
   "module": "./dist/colorspick.js",
