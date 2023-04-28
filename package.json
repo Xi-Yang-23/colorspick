@@ -1,6 +1,14 @@
 {
   "name": "colorspick",
+<<<<<<< HEAD
   "version": "1.2.8",
+=======
+<<<<<<< HEAD
+  "version": "1.2.8",
+=======
+  "version": "1.2.7",
+>>>>>>> ae2b66c8a7b183f04e960c92d6dc390bfb3c1a60
+>>>>>>> efbc581ae1951ad9468c60dbcaa4ecbe9fe8a7c5
   "private": false,
   "main": "./dist/colorspick.umd.js",
   "module": "./dist/colorspick.js",
@@ -25,4 +33,12 @@
     "@vitejs/plugin-vue": "^4.0.0",
     "vite": "^4.1.4"
   }
+<<<<<<< HEAD
 }
+=======
+<<<<<<< HEAD
+}
+=======
+}
+>>>>>>> ae2b66c8a7b183f04e960c92d6dc390bfb3c1a60
+>>>>>>> efbc581ae1951ad9468c60dbcaa4ecbe9fe8a7c5

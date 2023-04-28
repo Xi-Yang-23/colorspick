@@ -48,23 +48,55 @@
         :cp-swat-active-index='3' round cp-type='swate' v-model="colors8" />
       <p>{{ colors8 }}</p>
     </div>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> efbc581ae1951ad9468c60dbcaa4ecbe9fe8a7c5
 
     <!-- 单色 -->
     <div>
       <colors-pick color="#00FFFF" :cp-swat-colors="['#00FFFF', '#FFFF00', '#0000FF', '#00FF00', '#8B00FF']"
         cp-evs="change" round cp-swat-active="love" cp-swat v-model="colors16" />
+<<<<<<< HEAD
+=======
+=======
+  
+    <!-- 单色 -->
+    <div>
+      <colors-pick :cp-swat-colors="['#00FFFF', '#FFFF00', '#0000FF', '#00FF00', '#8B00FF']" cp-evs="change" round
+        cp-swat-active="love" cp-swat v-model="colors16" />
+>>>>>>> ae2b66c8a7b183f04e960c92d6dc390bfb3c1a60
+>>>>>>> efbc581ae1951ad9468c60dbcaa4ecbe9fe8a7c5
       <p> {{ colors16 }}</p>
     </div>
 
     <div>
+<<<<<<< HEAD
       <colors-pick :cp-swat-colors="['#eeeeee', '#dddddd', '#000000']" color="#000000" :cp-swat-active-index='2' round
+=======
+<<<<<<< HEAD
+      <colors-pick :cp-swat-colors="['#eeeeee', '#dddddd', '#000000']" color="#000000" :cp-swat-active-index='2' round
+=======
+      <colors-pick :cp-swat-colors="['#eeeeee', '#dddddd', '#000000']" :cp-swat-active-index='2' round
+>>>>>>> ae2b66c8a7b183f04e960c92d6dc390bfb3c1a60
+>>>>>>> efbc581ae1951ad9468c60dbcaa4ecbe9fe8a7c5
         cp-swat-active="square" cp-swat v-model="colors17" />
       <p>{{ colors17 }}</p>
     </div>
 
     <div>
+<<<<<<< HEAD
       <colors-pick color="#0000FF" :cp-swat-colors="['#00FFFF', '#FFFF00', '#0000FF', '#00FF00', '#8B00FF']" :copy="false"
         round cp-border="0" cp-swat-active="love" cp-swat v-model="colors18" />
+=======
+<<<<<<< HEAD
+      <colors-pick color="#0000FF" :cp-swat-colors="['#00FFFF', '#FFFF00', '#0000FF', '#00FF00', '#8B00FF']" :copy="false"
+        round cp-border="0" cp-swat-active="love" cp-swat v-model="colors18" />
+=======
+      <colors-pick :cp-swat-colors="['#00FFFF', '#FFFF00', '#0000FF', '#00FF00', '#8B00FF']" :copy="false" round
+        cp-border="0" cp-swat-active="love" cp-swat v-model="colors18" />
+>>>>>>> ae2b66c8a7b183f04e960c92d6dc390bfb3c1a60
+>>>>>>> efbc581ae1951ad9468c60dbcaa4ecbe9fe8a7c5
       <p> {{ colors18 }}</p>
     </div>
 
@@ -140,7 +172,15 @@ const colors16 = ref()
 const colors17 = ref()
 const colors18 = ref()
 
+<<<<<<< HEAD
 const change = v => console.log(v);
+=======
+<<<<<<< HEAD
+const change = v => console.log(v);
+=======
+const a = v => console.log(v);
+>>>>>>> ae2b66c8a7b183f04e960c92d6dc390bfb3c1a60
+>>>>>>> efbc581ae1951ad9468c60dbcaa4ecbe9fe8a7c5
 </script>
 
 <style scoped>
