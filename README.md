@@ -87,7 +87,12 @@ const colors = ref()
 ---
 
 # 属性 
+<<<<<<< HEAD
 |<span style="display:inline-block;min-width:120px">属性</span>|<span style="display:inline-block;min-width:100px">类型</span>|<span style="display:inline-block;min-width:100px">默认值</span>|作用|<span style="display:inline-block;min-width:200px">可用模式</span>
+=======
+|<span style="display:inline-block;min-width:190px">属性</span>|<span style="display:inline-block;min-width:170px">类型</span>|<span style="display:inline-block;min-width:200px">默认值</span>|作用|<span style="display:inline-block;min-width:200px">可用模式</span>|
+|<span style="display:inline-block;min-width:120px">属性</span>|<span style="display:inline-block;min-width:170px">类型</span>|<span style="display:inline-block;min-width:100px">默认值</span>|作用|<span style="display:inline-block;min-width:200px">可用模式</span>|
+>>>>>>> ae2b66c8a7b183f04e960c92d6dc390bfb3c1a60
 |:----|:----|:----|:----|:---:|
 |cp-type|String {gradc \| onec \| swate}|默认 onec|gradc(渐变模式)  <br/>  onec(单色模式) <br/>swate(纯色板模式)|   gradc \| swate  \| onec |
 |disabled|Boolean|默认 true(颜色可选)|是否可以选择颜色|onec \| gradc|
@@ -99,7 +104,11 @@ const colors = ref()
 |height|[String,Number]|onec模式默认 30px \| gradc模式默认200px|选色器高度|onec \| gradc|
 |width|[String,Number]|onec模式默认 30px<br/><br/> gradc模式默认200px|选色器高宽度|onec \| gradc|
 |height|[String,Number]|onec模式默认 30px<br/><br/> gradc模式默认 200px|选色器高度|onec \| gradc|
+<<<<<<< HEAD
 |color|[String,Array]|onec(单色)模式默认 #00FF00（绿色）<br/><br/>gradc(渐变)模式初始颜色 ['#FF0000','#6284FF'] <br/><br/>**注：仅支持6位16进制颜色 如：#ffffff**| 颜色初始值 |onec \| gradc |
+=======
+|color|[String,Array]|默认 #05b9e6（天蓝色）**注：仅支持6位16进制颜色 如：#ffffff**|onec(单色)模式初始颜色 #05b9e6 <br/><br/> gradc(渐变)模式初始颜色 ['#FF0000','#6284FF'] |onec \| gradc |
+>>>>>>> ae2b66c8a7b183f04e960c92d6dc390bfb3c1a60
 |grad-range-width|Number|默认 200 |滑块宽度 (单位：px)|gradc|
 |grad-range-height|String|默认 2px |滑块高度|gradc|
 |grad-range-color| String |默认 #cbcbcb|滑块颜色|gradc|
@@ -118,10 +127,24 @@ const colors = ref()
 | cp-swat-active|String|默认 love|色板选中类型 circle(圆) square(矩形) goly(三角) love(爱心) yes（勾勾） border（边框）|onec  \| swate|
 |cp-swat-gap|String| 默认 5px|色板间距 例如: `cp-swat-gap='2px 5px'` 表示水平间距2px，垂直间距5px  \| 又例：`cp-swat-gap='2px'`垂直间距与水平间距2px|onec \| swate|
 |cp-swat-size|String|默认 30px|色板的色块大小 |onec  \| swate|
+<<<<<<< HEAD
 |cp-swat-active-index|Number|默认 0|色块初始激活的颜色数组下标  |  swate|
 |z-index|Number|默认 1| 复制成功提示z-index属性值 |onec  \| gradc|
 |cp-evs|String{input, change}|默认 input | v-model的触发时机 | onec 
  
+=======
+|cp-swat-active-index|Number|默认 0|色块初始激活的颜色数组下标  |onec  \| swate|
+|z-index|Number|默认 1| 复制成功提示z-index属性值 |onec  \| gradc|
+|cp-evs|String{input, change}|默认 input | 颜色返回时机 | onec \| swate 
+|cp-swat-width|String|默认150px|色板宽度 (设置宽度，超出时自动换行) |onec  \|swate|
+| cp-swat-active|String|默认 love|色板选中类型 circle(圆) square(矩形) goly(三角) love(爱心) yes（勾勾） border（边框）|onec  \| swate|
+|cp-swat-gap|String| 默认 5px|色板间距 例如: `cp-swat-gap='2px 5px'` 表示水平间距2px，垂直间距5px  <br/><br/>  又例：`cp-swat-gap='2px'`垂直间距与水平间距2px|onec \| swate|
+|cp-swat-size|String|默认 30px|色板的色块大小 |onec  \| swate|
+|cp-swat-active-index|Number|默认 0|色块初始激活的颜色数组下标  |onec  \| swate|
+|z-index|Number|默认 1| 复制成功提示z-index属性值 |onec  \| gradc|
+|cp-evs|String{input, change}|默认 input | 颜色返回时机 | onec \| swate |
+
+>>>>>>> ae2b66c8a7b183f04e960c92d6dc390bfb3c1a60
 ---
 
 # solt - 插槽
@@ -139,8 +162,11 @@ const colors = ref()
 |名称|作用|可用模式|
 |:-----|:-----|:-----|
 |v-model|绑定的16进制颜色|gradc \| onec \| swate | 
+<<<<<<< HEAD
 |change|input颜色选择的change事件|onec
 |input|input颜色选择的change事件|onec
+=======
+>>>>>>> ae2b66c8a7b183f04e960c92d6dc390bfb3c1a60
 
  
  # 反馈

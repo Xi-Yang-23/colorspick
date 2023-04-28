@@ -5,8 +5,12 @@
     <!-- 颜色值与复制按钮-->
     <div class="flex">
       <input :style="{ 'width': widthAndHeight.w, 'height': widthAndHeight.h }" :disabled="!props.disabled"
+<<<<<<< HEAD
         class="set-color  cue-po" type="color" v-bind="$attrs" :value="onecActiveColor" @change="inputEvs"
         @input="inputEvs">
+=======
+        class="set-color  cue-po" type="color" @change="inputEvs" @input="inputEvs" :value="onecActiveColor">
+>>>>>>> ae2b66c8a7b183f04e960c92d6dc390bfb3c1a60
 
       <div class="copy color-box active cue-po" @click="startCopy" v-if="props.copy">
         <div>{{ onecActiveColor }}</div>
@@ -196,8 +200,11 @@ import copy from '@/utils/copy'
 import ramColor from '@/utils/ramColor'
 import Gradc from '@/utils/gradc'
 
+<<<<<<< HEAD
 const attrs = useAttrs()
 
+=======
+>>>>>>> ae2b66c8a7b183f04e960c92d6dc390bfb3c1a60
 const emit = defineEmits(['update:modelValue'])
 
 
@@ -743,6 +750,7 @@ const gradColorInit = [
 //   单色
 if (cpType.value === 'onec') {
   if (props.cpSwat === true) {
+<<<<<<< HEAD
     const findActiveColor = props.cpSwatColors.findIndex(colorItem => colorItem === props.color)
     onecActiveColor.value = props.cpSwatColors[findActiveColor]
     onecActiveColorIndex.value = findActiveColor
@@ -750,6 +758,13 @@ if (cpType.value === 'onec') {
 
 
   onecActiveColor.value = props.color
+=======
+    onecActiveColor.value = props.cpSwatColors[props.cpSwatActiveIndex]
+    onecActiveColorIndex.value = props.cpSwatActiveIndex
+  } else {
+    onecActiveColor.value = props.color
+  }
+>>>>>>> ae2b66c8a7b183f04e960c92d6dc390bfb3c1a60
   // 单色首次加载  
   emit('update:modelValue', onecActiveColor.value)
 
